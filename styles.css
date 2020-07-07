@@ -1,0 +1,162 @@
+/* Global css */
+* {
+    margin: 0;
+}
+/* Custom font */
+@font-face {
+    font-family: Roboto;
+    src: url('Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: RobotoBold;
+    src: url('Roboto-Bold.ttf');
+}
+/* Styles the top navigation bar */
+nav {
+    padding: 24px;
+    background-color: black; 
+    margin: 0;
+}
+nav .links {
+    float: right;
+}
+/* Styles links in nav bar */
+nav a {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    margin: 18px;
+    font-family: RobotoBold, sans-serif;
+    letter-spacing: .2em;
+    transition: ease 0.2s;
+}
+nav a:hover {
+    color: #B5B5B5;
+}
+h2 {
+    font-family: RobotoBold;
+    color: white;
+    margin: 42px;
+    font-size: 28px;
+}
+p {
+    font-family: Roboto;
+    color: white;
+    margin-left: 42px;
+    margin-top: 20px;
+}
+/* Style email colors */
+.contact a {
+    color: #36A2FF;
+}
+.contact a:hover {
+    color: #77BFFF;
+}
+body {
+    background-color: black;
+    height: 100%;
+}
+#juno {
+    width: 100%;
+}
+#discography {
+    color: white;
+    font-family: RobotoBold, sans-serif;
+    letter-spacing: .6em;
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+}
+.albums {
+    max-width: 910px;
+    margin: 0 auto;
+    padding: 18px;
+}
+/* Album art */
+.albums img {
+    width: 30%;
+    height: 30%;
+    margin: 0;
+    box-sizing: border-box;
+    transition: ease 0.3s;
+}
+.albums img:hover {
+    background-color: black;
+    opacity: .6;
+}
+/* Responsive layout */
+@media screen and (max-width: 1000px) {
+    .albums {
+        margin-top: 5%;
+    }
+    #juno {
+        height: 100%;
+        width: 1000px;
+        overflow: hidden;
+    }
+}
+@media screen and (max-width: 600px) {
+    .albums {
+        width: 500px;
+        margin: 0 auto;
+        margin-top: 10%;
+    }
+    .albums a img {
+        width: 40%;
+        height: 40%;
+    }
+    #juno {
+        height: 100%;
+    }
+    footer .socials img {
+        height: 20px;
+        width: 20px;
+        margin: 18px;
+    }
+}
+
+/* Footer */
+footer {
+    position: relative;
+    width: 100%;
+    height: 140px;
+}
+footer p {
+    color: white;
+    font-family: Roboto;
+    text-align: center;
+    font-size: 12px;
+    padding-bottom: 24px;
+}
+/* Social media links */
+.socials {
+    margin: 0 auto;
+    width: fit-content;
+    margin-top: 50px;
+}
+.socials img {
+    height: 30px;
+    width: 30px;
+    margin: 20px;
+    transition: ease 0.2s;
+}
+.socials img:hover {
+    background-color: black;
+    opacity: 0.6;
+}
+/* Footer for pages which content doesn't fill entire page */
+.footer-bottom {
+    position: absolute;
+    bottom: 50px;
+    height: 140px;
+    width: 100%;
+}
+.footer-bottom p {
+    color: white;
+    font-family: Roboto;
+    text-align: center;
+    font-size: 12px;
+    padding-bottom: 24px;
+}
+
